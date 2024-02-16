@@ -21,9 +21,9 @@ services:
       dockerfile: DockerFileFront
       context: "./angularFront/"
     links:
-       - "backendserver"
+       - "backend"
     depends_on:
-       - "backendserver"
+       - "backend"
     ports:
        - "8081:80" 
 

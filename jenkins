@@ -1,0 +1,56 @@
+
+pipeline {
+    agent any
+    tools {
+  maven 'maven'
+  nodejs 'nodejs'
+}
+    
+    stages {
+        
+        
+        
+        
+         stage('checkout'){
+            steps {
+
+                git branch: 'main', credentialsId: 'IdGit', url: 'https://github.com/aymen065/apprepo'
+            }
+        }
+        
+        
+
+        
+        stage('build back') {
+            steps {
+                script {
+                   
+                    dir('/var/lib/jenkins/workspace/pipelineFull/spring-boot-jpa-h2') {
+                        sh 'pwd'
+                      
+                        sh 'mvn install'
+                        
+                    }
+                }
+            }
+        }
+        
+        
+
+        
+        stage('run containers'){
+            steps{
+                script{
+                   
+                    sh 'docker-compose up --force-recreate -d'
+                }
+            }
+        }
+        
+        
+
+        
+        
+    }
+}
+
