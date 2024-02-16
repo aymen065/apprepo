@@ -1,6 +1,6 @@
 package com.bezkoder.springbootjpah2.config.jwt;
 
-import com.bezkoder.springbootjpah2.dataImpl.UserDetailsImpl;
+import com.bezkoder.springbootjpah2.UserDetailsImpl;
 import org.springframework.stereotype.Component;
 import java.security.Key;
 import java.util.Date;

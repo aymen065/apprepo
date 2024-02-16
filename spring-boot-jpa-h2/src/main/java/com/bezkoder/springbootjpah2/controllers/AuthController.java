@@ -3,7 +3,7 @@ package com.bezkoder.springbootjpah2.controllers;
 
 import com.bezkoder.springbootjpah2.models.User;
 
-import com.bezkoder.springbootjpah2.dataImpl.UserDetailsImpl;
+import com.bezkoder.springbootjpah2.UserDetailsImpl;
 import com.bezkoder.springbootjpah2.services.IRoleService;
 import com.bezkoder.springbootjpah2.services.IUserService;
 import com.bezkoder.springbootjpah2.config.jwt.JwtUtils;

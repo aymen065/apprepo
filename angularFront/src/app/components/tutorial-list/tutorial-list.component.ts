@@ -21,11 +21,13 @@ export class TutorialListComponent implements OnInit {
   page = 1;
   count = 0;
   pageSize = 3;
-  pageSizes = [1,2,3,4,5,6,7,8,9];
+  pageSizes = [5,10,15];
   
 
-  constructor(private tutorialService: TutorialService, private storageService: StorageService,
-    private eventBusService: EventBusService, private router: Router) { }
+  constructor(private tutorialService: TutorialService,
+    private storageService: StorageService,
+    private eventBusService: EventBusService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.retrieveTutorials();
@@ -108,23 +110,27 @@ export class TutorialListComponent implements OnInit {
   }
 
   searchTitle(): void {
-    this.currentTutorial = {};
-    this.currentIndex = -1;
+    const params = this.getRequestParams(this.title, this.page, this.pageSize);
 
-    this.tutorialService.findByTitle(this.title)
-      .subscribe({
-        next: (data) => {
-          this.tutorials = data;
-          console.log(data);
-        },
-        error: (e) => {
-          console.error(e)
-          if (this.storageService.isLoggedIn()) {
-            this.eventBusService.emit(new EventData('logout', null));
-            this.router.navigate(['/login']);
-          }
+    this.tutorialService.findByTitle(params)
+    .subscribe(
+      response => {
+        const { tutorials, totalItems } = response;
+        this.tutorials = tutorials;
+        this.count = totalItems;
+        console.log(response);
+      },
+      error => {
+        console.log(error.status);
+        if (this.storageService.isLoggedIn()) {
+          this.eventBusService.emit(new EventData('logout', null));
+          this.router.navigate(['/login']);
         }
       });
   }
+
+
+
+
 
 }

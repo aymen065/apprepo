@@ -83,8 +83,7 @@ public class TutorialController {
 
     }
 
-    @DeleteMapping()
-    public ResponseEntity<HttpStatus> deleteAllTutorials() {
+    @DeleteMapping()    public ResponseEntity<HttpStatus> deleteAllTutorials() {
         try {
             tutorialService.deleteAllTutorials();
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);

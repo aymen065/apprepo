@@ -1,6 +1,6 @@
 package com.bezkoder.springbootjpah2.services.Impl;
 
-import com.bezkoder.springbootjpah2.dataImpl.UserDetailsImpl;
+import com.bezkoder.springbootjpah2.UserDetailsImpl;
 import com.bezkoder.springbootjpah2.models.User;
 import com.bezkoder.springbootjpah2.repositories.IUserRepository;
 import com.bezkoder.springbootjpah2.services.IUserDetailsService;

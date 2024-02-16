@@ -6,6 +6,8 @@
         class="form-control"
         placeholder="Search by title"
         [(ngModel)]="title"
+        (change)="searchTitle()"
+        
       />
       <div class="input-group-append">
         <button

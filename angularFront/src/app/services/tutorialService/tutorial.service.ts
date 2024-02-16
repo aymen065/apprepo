@@ -38,7 +38,7 @@ export class TutorialService {
     return this.http.delete(baseUrl);
   }
 
-  findByTitle(title: any): Observable<Tutorial[]> {
-    return this.http.get<Tutorial[]>(`${baseUrl}?title=${title}`);
+  findByTitle(params: any): Observable<any> {
+    return this.http.get<any>(baseUrl,{ params });
   }
 }
