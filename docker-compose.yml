@@ -1,0 +1,31 @@
+version: '3.3'
+
+services:
+  
+  backend:
+    networks:
+      - testapp
+    container_name: backend
+    build: 
+      dockerfile: DockerFileBack
+      context: "./spring-boot-jpa-h2/"
+    ports:
+       - "8080:8080"
+    
+    restart: on-failure
+  frontend:
+    networks:
+      - testapp
+    container_name: frontend
+    build: 
+      dockerfile: DockerFileFront
+      context: "./angularFront/"
+    links:
+       - "backendserver"
+    depends_on:
+       - "backendserver"
+    ports:
+       - "8081:80" 
+
+networks:
+  testapp: 
