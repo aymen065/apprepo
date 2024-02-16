@@ -1,4 +1,4 @@
-package com.bezkoder.springbootjpah2.Models;
+package com.bezkoder.springbootjpah2.models;
 
 public enum ERole {
     ROLE_USER,

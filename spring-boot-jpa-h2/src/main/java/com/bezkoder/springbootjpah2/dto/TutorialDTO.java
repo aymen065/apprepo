@@ -1,9 +1,6 @@
-package com.bezkoder.springbootjpah2.Dto;
+package com.bezkoder.springbootjpah2.dto;
 
-import com.bezkoder.springbootjpah2.Models.Tutorial;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter

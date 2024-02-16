@@ -1,9 +1,7 @@
 package com.bezkoder.springbootjpah2.config;
-import com.bezkoder.springbootjpah2.Services.IUserDetailsService;
-import com.bezkoder.springbootjpah2.ServicesImpl.UserDetailsServiceImpl;
+import com.bezkoder.springbootjpah2.services.IUserDetailsService;
 import com.bezkoder.springbootjpah2.config.jwt.AuthEntryPointJwt;
 import com.bezkoder.springbootjpah2.config.jwt.AuthTokenFilter;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -18,9 +16,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 
 @Configuration

@@ -1,6 +1,6 @@
-package com.bezkoder.springbootjpah2.Services;
+package com.bezkoder.springbootjpah2.services;
 
-import com.bezkoder.springbootjpah2.Models.User;
+import com.bezkoder.springbootjpah2.models.User;
 
 public interface IUserService {
     Boolean existsByUsername(String username);

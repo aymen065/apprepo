@@ -1,7 +1,6 @@
 package com.bezkoder.springbootjpah2.payload.response;
 
-import com.bezkoder.springbootjpah2.Dto.TutorialDTO;
-import com.bezkoder.springbootjpah2.Models.Tutorial;
+import com.bezkoder.springbootjpah2.dto.TutorialDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

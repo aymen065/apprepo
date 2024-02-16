@@ -1,11 +1,11 @@
-package com.bezkoder.springbootjpah2.Controllers;
+package com.bezkoder.springbootjpah2.controllers;
 
 
-import com.bezkoder.springbootjpah2.Models.User;
+import com.bezkoder.springbootjpah2.models.User;
 
-import com.bezkoder.springbootjpah2.DataImpl.UserDetailsImpl;
-import com.bezkoder.springbootjpah2.Services.IRoleService;
-import com.bezkoder.springbootjpah2.Services.IUserService;
+import com.bezkoder.springbootjpah2.dataImpl.UserDetailsImpl;
+import com.bezkoder.springbootjpah2.services.IRoleService;
+import com.bezkoder.springbootjpah2.services.IUserService;
 import com.bezkoder.springbootjpah2.config.jwt.JwtUtils;
 import com.bezkoder.springbootjpah2.payload.request.LoginRequest;
 import com.bezkoder.springbootjpah2.payload.request.SignupRequest;

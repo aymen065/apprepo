@@ -1,8 +1,8 @@
-package com.bezkoder.springbootjpah2.ServicesImpl;
+package com.bezkoder.springbootjpah2.services.Impl;
 
-import com.bezkoder.springbootjpah2.Models.User;
-import com.bezkoder.springbootjpah2.Repositories.IUserRepository;
-import com.bezkoder.springbootjpah2.Services.IUserService;
+import com.bezkoder.springbootjpah2.models.User;
+import com.bezkoder.springbootjpah2.repositories.IUserRepository;
+import com.bezkoder.springbootjpah2.services.IUserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

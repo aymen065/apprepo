@@ -1,6 +1,6 @@
-package com.bezkoder.springbootjpah2.DataImpl;
+package com.bezkoder.springbootjpah2.dataImpl;
 
-import com.bezkoder.springbootjpah2.Models.User;
+import com.bezkoder.springbootjpah2.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,6 +1,6 @@
-package com.bezkoder.springbootjpah2.Services;
+package com.bezkoder.springbootjpah2.services;
 
-import com.bezkoder.springbootjpah2.Dto.TutorialDTO;
+import com.bezkoder.springbootjpah2.dto.TutorialDTO;
 
 import org.springframework.data.domain.Page;
 

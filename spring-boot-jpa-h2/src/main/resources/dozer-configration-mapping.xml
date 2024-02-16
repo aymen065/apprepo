@@ -8,8 +8,8 @@
 
     </configuration>
     <mapping>
-        <class-a>com.bezkoder.springbootjpah2.Models.Tutorial</class-a>
-        <class-b>com.bezkoder.springbootjpah2.Dto.TutorialDTO</class-b>
+        <class-a>com.bezkoder.springbootjpah2.models.Tutorial</class-a>
+        <class-b>com.bezkoder.springbootjpah2.dto.TutorialDTO</class-b>
     </mapping>
 
 </mappings>

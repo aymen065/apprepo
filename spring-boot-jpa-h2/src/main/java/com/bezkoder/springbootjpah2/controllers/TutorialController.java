@@ -1,8 +1,7 @@
-package com.bezkoder.springbootjpah2.Controllers;
+package com.bezkoder.springbootjpah2.controllers;
 
-import com.bezkoder.springbootjpah2.Dto.TutorialDTO;
-import com.bezkoder.springbootjpah2.Models.Tutorial;
-import com.bezkoder.springbootjpah2.Services.ITutorialService;
+import com.bezkoder.springbootjpah2.dto.TutorialDTO;
+import com.bezkoder.springbootjpah2.services.ITutorialService;
 import com.bezkoder.springbootjpah2.payload.response.TutorialsResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;

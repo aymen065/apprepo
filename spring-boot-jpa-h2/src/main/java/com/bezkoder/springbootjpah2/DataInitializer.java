@@ -1,8 +1,8 @@
 package com.bezkoder.springbootjpah2;
 
-import com.bezkoder.springbootjpah2.Models.ERole;
-import com.bezkoder.springbootjpah2.Models.Role;
-import com.bezkoder.springbootjpah2.Repositories.IRoleRepository;
+import com.bezkoder.springbootjpah2.models.ERole;
+import com.bezkoder.springbootjpah2.models.Role;
+import com.bezkoder.springbootjpah2.repositories.IRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

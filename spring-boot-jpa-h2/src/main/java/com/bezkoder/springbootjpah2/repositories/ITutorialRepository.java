@@ -1,11 +1,9 @@
-package com.bezkoder.springbootjpah2.Repositories;
+package com.bezkoder.springbootjpah2.repositories;
 
-import com.bezkoder.springbootjpah2.Models.Tutorial;
+import com.bezkoder.springbootjpah2.models.Tutorial;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
 
 public interface ITutorialRepository extends JpaRepository<Tutorial, Long> {
     Page<Tutorial> findByPublished(boolean published, Pageable pageable);

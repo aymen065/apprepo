@@ -1,9 +1,9 @@
-package com.bezkoder.springbootjpah2.ServicesImpl;
+package com.bezkoder.springbootjpah2.services.Impl;
 
-import com.bezkoder.springbootjpah2.Models.ERole;
-import com.bezkoder.springbootjpah2.Models.Role;
-import com.bezkoder.springbootjpah2.Repositories.IRoleRepository;
-import com.bezkoder.springbootjpah2.Services.IRoleService;
+import com.bezkoder.springbootjpah2.models.ERole;
+import com.bezkoder.springbootjpah2.models.Role;
+import com.bezkoder.springbootjpah2.repositories.IRoleRepository;
+import com.bezkoder.springbootjpah2.services.IRoleService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

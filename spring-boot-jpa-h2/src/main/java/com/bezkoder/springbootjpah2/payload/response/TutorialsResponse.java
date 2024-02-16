@@ -1,6 +1,6 @@
 package com.bezkoder.springbootjpah2.payload.response;
 
-import com.bezkoder.springbootjpah2.Dto.TutorialDTO;
+import com.bezkoder.springbootjpah2.dto.TutorialDTO;
 import lombok.*;
 
 import java.util.List;

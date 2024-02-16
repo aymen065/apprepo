@@ -1,9 +1,9 @@
-package com.bezkoder.springbootjpah2.ServicesImpl;
+package com.bezkoder.springbootjpah2.services.Impl;
 
-import com.bezkoder.springbootjpah2.DataImpl.UserDetailsImpl;
-import com.bezkoder.springbootjpah2.Models.User;
-import com.bezkoder.springbootjpah2.Repositories.IUserRepository;
-import com.bezkoder.springbootjpah2.Services.IUserDetailsService;
+import com.bezkoder.springbootjpah2.dataImpl.UserDetailsImpl;
+import com.bezkoder.springbootjpah2.models.User;
+import com.bezkoder.springbootjpah2.repositories.IUserRepository;
+import com.bezkoder.springbootjpah2.services.IUserDetailsService;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

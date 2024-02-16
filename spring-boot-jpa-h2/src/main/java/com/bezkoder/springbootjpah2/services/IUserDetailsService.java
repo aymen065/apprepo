@@ -1,4 +1,4 @@
-package com.bezkoder.springbootjpah2.Services;
+package com.bezkoder.springbootjpah2.services;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
