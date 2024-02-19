@@ -69,12 +69,13 @@ public class AuthController {
                 .map(GrantedAuthority::getAuthority)
                 //.map(item -> item.getAuthority())
                 .collect(Collectors.toList());
-
+        System.out.println(jwtCookie.toString());
         return ResponseEntity.ok().header(HttpHeaders.SET_COOKIE, jwtCookie.toString())
                 .body(new UserInfoResponse(userDetails.getId(),
                         userDetails.getUsername(),
                         userDetails.getEmail(),
                         roles));
+
 
     }
 

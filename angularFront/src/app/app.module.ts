@@ -18,6 +18,7 @@ import { BoardModeratorComponent } from './components/board-moderator/board-mode
 import { BoardUserComponent } from './components/board-user/board-user.component';
 import { httpInterceptorProviders } from './helpers/http.interceptor';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     BoardModeratorComponent,
     BoardUserComponent,
     NavBarComponent,
+    ChatComponent,
     
   ],
   imports: [

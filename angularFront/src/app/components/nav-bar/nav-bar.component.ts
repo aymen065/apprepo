@@ -14,6 +14,7 @@ export class NavBarComponent {
   showAdminBoard = false;
   showModeratorBoard = false;
   username?: string;
+  user:any;
   eventBusSub?: Subscription;
   private roles: string[] = [];
   constructor(private storageService: StorageService, private authService: AuthService,private eventBusService: EventBusService ) { }
@@ -22,14 +23,14 @@ export class NavBarComponent {
     this.isLoggedIn = this.storageService.isLoggedIn();
 
     if (this.isLoggedIn) {
-      const user = this.storageService.getUser();
-      this.roles = user.roles;
+      this.user = this.storageService.getUser();
+      this.roles = this.user.roles;
 
       this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
       this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
       console.log("show",this.roles);
 
-      this.username = user.username;
+      this.username = this.user.username;
     }
     this.eventBusSub = this.eventBusService.on('logout', () => {
       this.expire();

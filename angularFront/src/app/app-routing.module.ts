@@ -12,6 +12,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { BoardUserComponent } from './components/board-user/board-user.component';
 import { BoardModeratorComponent } from './components/board-moderator/board-moderator.component';
 import { BoardAdminComponent } from './components/board-admin/board-admin.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
+  {path: 'chat/:userId', component: ChatComponent}
   
 ];
 
