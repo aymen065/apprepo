@@ -19,6 +19,6 @@ public class ChatController {
         //System.out.println(message);
         return chatMessageRepository.save( new ChatMessage(message.getMessage(), message.getUser()));
     }
-    
+
 
 }
