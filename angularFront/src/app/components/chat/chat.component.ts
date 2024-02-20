@@ -36,7 +36,7 @@ export class ChatComponent implements OnInit {
   }
 
   lisenerMessage() {
-    this.chatService.getMessageSubject().subscribe((messages: any) => {
+    this.chatService.getMessageSubject().subscribe((messages: ChatMessage[]) => {
       this.messageList = messages.map((item: any)=> ({
         ...item,
         message_side: item.user === this.userId ? 'sender': 'receiver'

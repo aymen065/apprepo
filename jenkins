@@ -13,7 +13,6 @@ pipeline {
         
          stage('checkout'){
             steps {
-
                 git branch: 'main', credentialsId: 'IdGit', url: 'https://github.com/aymen065/apprepo'
             }
         }
@@ -25,7 +24,7 @@ pipeline {
             steps {
                 script {
                    
-                    dir('/var/lib/jenkins/workspace/pipelineFull/spring-boot-jpa-h2') {
+                    dir('/var/lib/jenkins/workspace/pipeline/spring-boot-jpa-h2') {
                         sh 'pwd'
                       
                         sh 'mvn install'
@@ -36,7 +35,25 @@ pipeline {
         }
         
         
+        
+         stage('build front') {
+            steps {
+                script {
+                   
+                    dir('/var/lib/jenkins/workspace/pipeline/angularFront') {
+                      
+                        sh 'npm install'
+                        sh 'ng build'
+                        
+                    }
+                }
+            }
+        }
+       
+       
 
+
+        
         
         stage('run containers'){
             steps{

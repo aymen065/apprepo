@@ -68,7 +68,10 @@ public class WebSecurityConfig {
                 .antMatchers("/api/test/**").permitAll()
                 .antMatchers("/h2-ui/**").permitAll()
                 .antMatchers("/swagger-ui/**","/v3/**").permitAll()
-                .antMatchers("/**").permitAll()
+                .antMatchers("/topic/**").permitAll()
+                .antMatchers("/app/chat/**").permitAll()
+                .antMatchers("/chat-socket/**").permitAll()
+                //.antMatchers("/**").permitAll()
 
                 .anyRequest().authenticated();
 

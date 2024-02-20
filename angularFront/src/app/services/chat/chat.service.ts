@@ -3,6 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 import { ChatMessage } from '../../models/chat-message';
 import * as SockJS from 'sockjs-client';
 import { Stomp } from '@stomp/stompjs';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -18,7 +19,7 @@ export class ChatService {
   }
 
   initConnenctionSocket() {
-    const url = 'http://localhost:8080/chat-socket';
+    const url = environment.apiUrl+'/chat-socket';
     const socket = new SockJS(url);
     this.stompClient = Stomp.over(socket)
   }
